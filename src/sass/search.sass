@@ -1,0 +1,48 @@
+.search-form
+	display: flex
+	align-items: center
+	width: 70%
+	white-space: nowrap
+	.search-user
+		border: none
+		width: 100%
+		max-width: 650px
+		height: 50px
+		font-size: 18px
+		box-shadow: $shadow
+		border-radius: 4px 0 0 4px
+		color: $brownish-grey
+	.search-user:focus
+		outline: none
+
+	input[type=submit]
+		border-radius: 2px
+		background: url(../globals/img/SearchIcon.svg)
+		background-color: #ac53f2
+		width: 100px
+		height: 55px
+		text-indent: -9999px
+		background-repeat: no-repeat
+		background-size: contain
+		border: none
+		background-position: center
+		cursor: pointer
+.github-search
+	text-align: center
+	font-family: Raleway
+	font-weight: 200
+	font-style: italic
+	font-size: 60px
+	white-space: nowrap
+	margin-right: 10px
+	b
+		font-family: 'Roboto Mono', monospace;
+		font-size: 60px
+@media (max-width: 600px)
+	.header-search-results
+		display: block !important
+		p
+			white-space: normal
+		.search-form
+			display: flex !important
+			width: 100%	 !important

@@ -1,0 +1,87 @@
+.content-resuts
+	height: 100%
+	width: 100%
+	margin: 0 50px
+	.header-search-results
+		display: flex
+		justify-content: space-between
+		width: 100%
+		align-items: center
+		.github-search
+			font-size: 40px
+	.body-results
+		display: flex
+		margin-top: 60px
+		.body-results-sidbar
+			width: 25%
+			text-align: left
+			figure
+				max-width: 280px
+				width: 100%
+				img
+					width: 100%
+			.info-personal
+				padding: 15px 0
+				h2
+					font-family: Raleway
+					font-size: 35px
+					font-weight: 300
+				p
+					font-family: Raleway
+					font-size: 20px
+					font-weight: 300
+					color: $brownish-grey
+					font-family: Raleway
+					font-size: 20px
+					font-weight: 300		
+			.infos-geral
+				li 
+					margin: 20px 0
+					color: $brownish-grey
+					span
+						display: flex
+						align-items: center
+						font-family: Raleway
+						font-size: 20px
+						font-weight: 300
+						&::before
+							padding-right: 10px
+				.organization	
+					&::before	
+						content: url(../globals/img/organizationIcon.svg)
+				.location	
+					&::before	
+						content: url(../globals/img/locationIcon.svg)
+				.star	
+					&::before	
+						content: url(../globals/img/starIcon.svg)
+				.repositorie	
+					&::before	
+						content: url(../globals/img/repositorieIcon.svg)
+				.followers	
+					&::before	
+						content: url(../globals/img/followersIcon.svg)
+		.body-results-repos
+			width: 75%
+			ul
+				margin-left: 60px
+				li
+					padding-bottom: 20px;
+					h2
+						font-family: Raleway
+						font-size: 35px
+						color: #ac53f2
+					p,span
+						font-family: Raleway
+						font-size: 20px
+						font-weight: 300
+						padding: 20px 0
+					span
+						color: $brownish-grey
+
+			.star-repos
+				list-style-type: none
+				position: relative	
+				&::before	
+					content: url(../globals/img/starIcon.svg)
+					padding-right: 10px														
